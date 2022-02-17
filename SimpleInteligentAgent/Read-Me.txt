@@ -1,0 +1,6 @@
+TO RUN:
+
+-Install the Processing 3, in Processing 4 dont works
+-Install the Python Mode Processing 3, on the up-right corner, clicks in java and add Mode
+-Import the .pyde on Processing 3
+-Clicks in Run and enjoy this
