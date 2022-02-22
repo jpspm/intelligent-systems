@@ -29,8 +29,8 @@ class Food():
         return self.position
     
     def setPosition(self):
-        foodX = random.randrange(1, 640)
-        foodY = random.randrange(1, 360)
+        foodX = random.randrange(4, 639)
+        foodY = random.randrange(15, 359)
         position = PVector(foodX, foodY)
         self.position = position
         self.count = self.count+1
@@ -40,7 +40,7 @@ class Food():
     def display(self):
         # Draw a triangle rotated in the direction of velocity
         theta = self.velocity.heading()
-        fill(127)
+        fill(35, 46, 209)
         noStroke()
         strokeWeight(1)
         with pushMatrix():

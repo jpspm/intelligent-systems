@@ -11,7 +11,7 @@ class Vehicle():
         self.velocity = vel
         self.position = PVector(x, y)
         self.r = 6
-        self.maxspeed = 0.5
+        self.maxspeed = 2
         self.maxforce = 0.2
 
     # Method to update location
@@ -33,11 +33,14 @@ class Vehicle():
     def setVelocity(self, velocity):
         self.velocity = velocity
     
+    def setMaxspeed(self, speed):
+        self.maxspeed = speed%2.5
+    
     def display(self):
         # Draw a triangle rotated in the direction of velocity
-        theta = self.velocity.heading()+ PI / 2
+        theta = self.velocity.heading()+ PI /2
         #print(theta)
-        fill(127)
+        fill(137, 210, 220)
         noStroke()
         strokeWeight(1)
         with pushMatrix():
